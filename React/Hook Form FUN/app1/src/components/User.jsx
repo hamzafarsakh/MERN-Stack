@@ -16,12 +16,13 @@ const User = (props) => {
         setemail("");
         setpassword("");
         setfcpassword("");
+        console.log(createUser);
     } 
 
     return(
         <>
         <div className="main">
-                <form onSubmit={ createUser }>
+                <form onSubmit={  createUser }>
                 <div>
                     <label>First Name: </label> 
                     <input type="text" onChange={ (e) => setfname(e.target.value) } value={fname}/>
